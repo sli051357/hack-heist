@@ -21,7 +21,7 @@ Ensure you have the following installed:
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/acm-hack-heist.git
+git clone https://github.com/yourusername/hack-heist.git
 cd HackHeist
 ```
 
