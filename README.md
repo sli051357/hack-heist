@@ -1,0 +1,94 @@
+# HackHeist - Full Stack Workshop
+
+## Workshop Overview
+Welcome to **HackHeist**. In this workshop, you will build a full-stack application using **React, Express, and MongoDB** while learning about **RESTful APIs**. This project simulates a heist planning system, where you can manage crew members, plan jobs, and track loot.
+
+## Workshop Objectives
+By the end of this workshop, you will:
+- Understand **full-stack development** using **MERN** (MongoDB, Express, React, Node.js).
+- Create a **RESTful API** using Express.
+- Use **MongoDB** and **Mongoose** for database operations.
+- Build a **React frontend** to interact with the backend.
+- Implement **CRUD operations** (Create, Read, Update, Delete).
+
+## Getting Started
+
+### Prerequisites
+Ensure you have the following installed:
+- [**Node.js**](https://nodejs.org/) (LTS version)
+- [**MongoDB**](https://www.mongodb.com/) (Local or Atlas)
+- [**Postman**](https://www.postman.com/downloads/) (for testing APIs)
+
+### Clone the Repository
+```bash
+git clone https://github.com/yourusername/HackHeist.git
+cd HackHeist
+```
+
+### Set Up the Backend
+1. Navigate to the backend folder:
+   ```bash
+   cd server
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file and add your MongoDB URI:
+   ```
+   MONGO_URI=mongodb://localhost:27017/HackHeist
+   ```
+4. Start the backend server:
+   ```bash
+   npm run dev
+   ```
+   The server should now be running at `http://localhost:4000`.
+
+### Set Up the Frontend
+1. Navigate to the frontend folder:
+   ```bash
+   cd ../client
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the frontend development server:
+   ```bash
+   npm run dev
+   ```
+   The frontend should now be running at `http://localhost:3000`.
+
+## Workshop Activities
+This workshop is divided into sections where we progressively build upon **HackHeist**.
+
+### Activity 1: MongoDB Schema & Model
+- Define a **CrewMember** model with fields like `location`, `startDate`, `endDate` and `planEntry`.
+- Create a **Mongoose schema** in `models/crewModel.js`.
+
+### Activity 2: Building a REST API with Express
+- Implement **CRUD routes** for managing crew members.
+- (Optional) Use **Postman** to test the API endpoints.
+
+### Activity 3: Connecting React to Express
+- Create a **Crew Page** in React.
+- Use **Axios** to fetch and display crew member data.
+
+### Activity 4: Adding Heists
+- Define a **Heist** schema in MongoDB.
+
+## API Routes
+| Method | Endpoint          | Description               |
+|--------|------------------|----------------------------|
+| GET    | `/api/crew`      | Get all crew members       |
+| POST   | `/api/crew`      | Add a new crew member      |
+| GET    | `/api/heist`     | Get all heist              |
+| POST   | `/api/heist`     | Add a new heist            |
+
+## Next Steps
+- Implement **user authentication**.
+- Improve UI with **Tailwind CSS** or **Material UI**.
+- Deploy the application using **Vercel (frontend)** and **Render (backend)**.
+
+## Need Help?
+If you have any issues, reach out on [**Discord**](https://discord.gg/ceXK9Q59mE)!
