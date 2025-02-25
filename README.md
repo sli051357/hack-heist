@@ -62,20 +62,20 @@ cd hack-heist
 ## Workshop Activities
 This workshop is divided into sections where we progressively build upon **HackHeist**.
 
-### Activity 1: MongoDB Schema & Model
-- Define a **CrewMember** model with fields like `location`, `startDate`, `endDate` and `planEntry`.
-- Create a **Mongoose schema** in `models/crewModel.js`.
+### Activity 1: React Components
+- Create a HeistCard component in `HeistCard/index.jsx`
 
-### Activity 2: Building a REST API with Express
-- Implement **CRUD routes** for managing crew members.
+### Activity 2: MongoDB Schema & Model
+- Define a **Heist** model with fields like `location`, `startDate`, `endDate` and `planEntry`.
+- Create a **Mongoose schema** in `models/heistModel.js`.
+
+### Activity 3: API routes
+- Implement **CRUD routes** for managing heists in `pages/index.jsx`.
 - (Optional) Use **Postman** to test the API endpoints.
 
-### Activity 3: Connecting React to Express
-- Create a **Crew Page** in React.
-- Use **Axios** to fetch and display crew member data.
-
-### Activity 4: Adding Heists
-- Define a **Heist** schema in MongoDB.
+### Activity 4: Connecting React to Express
+- Use **Express routes** to load data in `routes/heistRoutes.js`.
+- Implement fetching heists in `pages/index.jsx`.
 
 ## API Routes
 | Method | Endpoint          | Description               |
