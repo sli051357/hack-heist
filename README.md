@@ -21,7 +21,8 @@ Ensure you have the following installed:
 
 ### Clone the Repository
 ```bash
-
+git clone https://github.com/your-username/hack-heist.git
+cd hack-heist
 ```
 
 ### Set Up the Backend
@@ -33,9 +34,9 @@ Ensure you have the following installed:
    ```bash
    npm install
    ```
-3. Create a `.env` file and add your MongoDB URI:
+3. Duplicate the sample `sample.env` file, rename it to be `.env` and add your MongoDB URI:
    ```
-   MONGO_URI=mongodb://localhost:27017/HackHeist    # Can alternatively use Mongo Atlas
+   DB_URL=mongodb://localhost:27017/HackHeist    # Can alternatively use Mongo Atlas
    ```
 5. Start the backend server:
    ```bash
