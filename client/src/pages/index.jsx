@@ -8,21 +8,19 @@ const Home = () => {
   const [Heists, setHeists] = useState([]);
   const [crew, setCrew] = useState([]);
 
-  const fetchHeists = async () => {
-    const response = await HeistApi.getHeist();
-    setHeists(response.data);
-    
-  }
+  /************** Activity 3 *************/ 
+  
+  // const fetchCrew = async () => {
+  //   const response = await HeistApi.getCrew();
+  //   setCrew(response.data);
+  // }
 
-  const fetchCrew = async () => {
-    const response = await HeistApi.getCrew();
-    setCrew(response.data);
-  }
+  // useEffect(() => {
+  //   fetchCrew();
+  // }, []);
 
-  useEffect(() => {
-    fetchHeists();
-    fetchCrew();
-  }, []);
+  /****************************************/ 
+
   return (
     <div className={styles.main}>
       <div className={styles.heistContainer}>
@@ -36,7 +34,8 @@ const Home = () => {
               />
             ))
           ) : (
-            <p>No heists available.</p>
+            // Sample Heist
+            <HeistCard location="La Jolla Shores" planEntry="Steal all the sand from the beach so we can make the sand castle of our dreams" startDate="2025-028-02T00:00:00.000Z" endDate="2025-02-03T00:00:00.000Z" />
           )}
         </div>
         <div className={styles.heistBox}>
@@ -49,7 +48,8 @@ const Home = () => {
               />
             ))
           ) : (
-            <p>No crew available.</p>
+            // Sample Crew Member
+            <CrewCard heist={{ location: "La Jolla Shores" }} crewMember="Uliyaah" rating="4" profile="Pretty good at digging holes"/>
           )}
         </div>
       </div>

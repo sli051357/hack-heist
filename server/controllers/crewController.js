@@ -9,9 +9,9 @@ const getCrew = async (req, res) => {
 
 // Create a POST async function to add an crew using the crew model schema
 const postCrew = async (req, res) => {
-    const { heist, crewSpot, rating, profile } = req.body;
+    const { heist, crewMember, rating, profile } = req.body;
 
-    if (!heist || !crewSpot || !rating) {
+    if (!heist || !crewMember || !rating) {
         return res.status(400).json({ error: 'Invalid request' });
     }
 
@@ -19,7 +19,7 @@ const postCrew = async (req, res) => {
 
     const newCrew = await Crew.create({
         heist: heistId,
-        crewSpot,
+        crewMember,
         rating,
         profile
     });

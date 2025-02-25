@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 // Creating a schemaz–a "blueprint" for our data
 const crewSchema = new mongoose.Schema({
   heist: { type: mongoose.Schema.Types.ObjectId, ref: 'Heists' }, 
-  crewSpot: { type: String }, 
+  crewMember: { type: String }, 
   rating:{ type: String },
   profile: { type: String }
 });

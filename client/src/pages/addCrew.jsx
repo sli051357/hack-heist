@@ -29,7 +29,7 @@ const AddCrew = () => {
 
     await HeistApi.postCrew({
       heist: selectedHeist,
-      crewSpot: crew,
+      crewMember: crew,
       rating,
       profile
     });

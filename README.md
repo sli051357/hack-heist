@@ -1,7 +1,7 @@
 # HackHeist - Full Stack Workshop
 
 ## Workshop Overview
-Welcome to **HackHeist**. In this workshop, you will build a full-stack application using **React, Express, and MongoDB** while learning about **RESTful APIs**. This project simulates a heist planning system, where you can manage crew members, plan jobs, and track loot.
+Welcome to **HackHeist**. In this workshop, you will build a full-stack application using **React, Express, and MongoDB** while learning about **RESTful APIs**. This project simulates a heist planning system, where you can manage crew members and plan heists.
 
 ## Workshop Objectives
 By the end of this workshop, you will:
